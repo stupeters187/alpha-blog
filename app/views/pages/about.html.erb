@@ -1,0 +1,104 @@
+<div class="navbar navbar-inverse navbar-static-top">
+  
+  <div class="container">
+    
+    <a href="#" class="navbar-brand">Alpha Blog</a>
+        
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navHeaderCollapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home', root_path %></li>
+<!--         <li><a href="#">About</a></li> -->
+        <li class="active"><%= link_to 'About', about_path %></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  
+  <div class="row">
+    
+  <div class="col-md-12">
+    <h1>FAQ</h1>
+  </div>
+
+  <div class="col-md-12">
+    <h2>Account questions</h2>
+  </div>
+  
+  <div class="col-md-12">
+    <h4>What are Optimizely's password requirements?</h4>
+  </div>
+  <div class="col-md-12">
+    <p>Passwords have to be at least 8 characters long and use at least two of the following: lowercase letters, uppercase letters, numbers, and symbols.</p>
+  </div>
+  <div class="col-md-12">
+    <h4>Is it possible to run experiments on multiple domains with one account?</h4>
+  </div>
+  <div class="col-md-12">
+    <p>You can run experiments on as many domains as you like with a single account. In fact, you can actually use the Options > URL Targeting controls to run a single experiment on multiple domains at the same time. However, you'll want to be aware of Optimizely's cross-domain tracking limitations.</p>
+
+    <p>Some Optimizely plans can create multiple projects to manage different domains. For more information about projects, click <a href="#">here</a>.</p>
+  </div>
+  <div class="col-md-12">
+    <h4>What happens if I exceed my monthly unique visitors?</h4>
+  </div>
+  <div class="col-md-12">
+    <p>If you exceed your monthly unique visitor (MUV) limit on an Enterprise plan, you will be billed an overage fee. If you feel that you've received this overage in error, please contact our support team and we'll be happy to assist you.</p>
+
+    <p>If you exceed the 50,000 monthly unique visitor limit on the Starter plan, your experiments will be paused until the beginning of the next monthly billing cycle. This cycle begins on the day of the month when you started your subscription.</p>
+
+    <p>When your experiments are paused, your visitors will see your original site, and not the variations you created in Optimizely. If you think you need more than 50,000 monthly unique visitors, please call us about a customizable Enterprise plan at 1-800-252-9480.</p>
+  </div>
+
+  <div class="col-md-12">
+    <h2>General Questions</h2>
+  </div>
+
+  <div class="col-md-12">
+    <h4>How will Optimizely affect my pageload times? Will my site lag?</h4>
+  </div>
+  <div class="col-md-12">
+    <p>The short answer: no. Your site shouldn't lag, and any delay to pageload times should be undetectable to the human eye.</p>
+
+    <p>We understand that even small increases in page load times must be taken seriously, so we do everything we can to make sure that Optimizely's impact on your page is as small as possible.</p>
+
+    <p><strong>Your Optimizely JavaScript file</strong> is referred to in your Optimizely snippet and is downloaded by your visitors' browsers at the very beginning of the page load process. It weighs in at ~35kb, is entirely static, and will be cached in your visitors' browsers after the first request. It's also hosted on Akamai and Edgecast, our global CDN providers, so there is no load-time dependency on Optimizely's servers.</p>
+
+    <p>The Optimizely JavaScript file download occurs in parallel alongside other JavaScript and CSS files on your site and should take roughly 80-100ms to complete in North America.</p>
+
+    <p><strong>Your visitors' tracking requests</strong> are made when your visitors land on a page containing your Optimizely snippet. This is how Optimizely collects analytics on your conversion goal performance. These requests are asynchronous, non-blocking, and only occur for visitors that have been placed in at least one experiment. They should have no effect on your page load time.</p>
+  </div>
+  <div class="col-md-12">
+    <h4>How does Optimizely affect my search ranking or SEO (Search Engine Optimization)?</h4>
+  </div>
+    <div class="col-md-12">
+    <p>Google permits and encourages A/B testing and has stated that performing an A/B or multivariate test poses no inherent risk to your site’s search rank. However, it is possible to jeopardize your search rank by abusing an A/B testing tool for purposes such as cloaking. We have more in-depth information in our SEO and search ranking article.</p>
+  </div>
+  <div class="col-md-12">
+    <h4>What version of jQuery does Optimizely use?</h4>
+  </div>
+  <div class="col-md-12">
+    <p>The Optimizely JavaScript (client) API provides a way for developers to modify the normal behavior of the Optimizely snippet for specific use cases. Use the API to target activation based on specific page content or events, query the state of activation, bucketing, or conversion for use in custom analytics packages, and force visitors into specific variations, among other capabilities.</p>
+  </div>
+    <div class="col-md-12">
+    <p>The Optimizely REST API lets you create and manage Optimizely projects and the experiments inside of them. The API is RESTful and encodes data in JSON. The sections below explain how to authenticate with the API, form requests, and consume responses.</p>
+  </div>
+  </div> 
+</div>
+
+
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">Site built by Stu Peters</p>
+    <a class="navbar-btn btn-primary btn pull-right">Follow us on twitter</a>
+  </div>
+</div>
