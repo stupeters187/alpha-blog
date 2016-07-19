@@ -1,9 +1,5 @@
-body { 
-  padding: 0px 0px 0px 0px;
-  background-color: #faebd7;
-}
+/*
+*= require_tree
+*= require_self
 
-.navbar-default {
-  margin-top: 5%;
-  margin-bottom: 0;
-}
+*/
